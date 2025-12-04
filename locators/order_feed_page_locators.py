@@ -6,12 +6,12 @@ class OrderFeedPageLocators:
     BUTTON_CLOSE_ORDER_NUMBER = (
         By.XPATH,
         "//button[contains(@class, 'Modal_modal__close_modified__3V5XS Modal_modal__close__TnseK')]",
-    ) #Кнопка закрытия окна номер заказа
+    )  # Кнопка закрытия окна номер заказа
 
     NUMBER_ORDER = (
         By.XPATH,
         "//h2[contains(@class, 'Modal_modal__title_shadow__3ikwq Modal_modal__title__2L34m text text_type_digits-large mb-8')]",
-    ) # Номер заказа
+    )  # Номер заказа
 
     ORDER_COUNTER_FOR_ENTIRE_TIME = (
         By.XPATH,
@@ -20,7 +20,7 @@ class OrderFeedPageLocators:
 
     COUNTER_ORDER_FOR_DAY = (
         By.XPATH,
-        "//div[3]/p[2]",
+        "//p[text()='Выполнено за сегодня:']/following-sibling::p",
     )  # Счетчик "Выполнено за сегодня"
 
     NUMBER_ORDER_IN_PROGRESS = (
